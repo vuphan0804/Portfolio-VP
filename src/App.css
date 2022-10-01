@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@tailwind components;
+@tailwind base;
+@import "./animation.css";
+@layer base {
+  body {
+    @apply bg-background text-white;
+  }
+  html {
+    @apply scroll-smooth;
+  }
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .card-primary {
+    @apply bg-zinc-900 py-8 px-6 rounded-md hover:-translate-y-2 cursor-pointer transition-all ease-linear duration-300 hover:shadow-md shadow-pink-500;
+  }
+  .card-mini {
+    @apply bg-zinc-300 py-0.5 px-2 rounded-full text-zinc-700 text-sm m-1 inline-block;
+  }
+  .transition-primary {
+    @apply transition-all ease-linear duration-300;
+  }
+  .image-personal {
+    @apply w-[300px] h-[400px] object-cover rounded-md border-2 border-white hover:scale-110 transition-all ease-linear duration-300;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.linear-bg-primary {
+  background: linear-gradient(
+    90deg,
+    #ce06d6,
+    #f440a3 39%,
+    #fdc7ca 67%,
+    #6183f3
+  );
+}
+.linear-bg-secondary {
+  background: linear-gradient(
+    90deg,
+    #bd10c3,
+    #cd1590 28%,
+    #d2177e 56%,
+    #ec8686
+  );
+}
+.linear-text-primary {
+  background: linear-gradient(
+    90deg,
+    #ce06d6,
+    #f440a3 39%,
+    #fdc7ca 67%,
+    #6183f3
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.linear-text-secondary {
+  background: linear-gradient(
+    90deg,
+    #bd10c3,
+    #cd1590 28%,
+    #d2177e 56%,
+    #ec8686
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.shadow-dynamic {
+  animation: shadowDynamic 4s linear infinite;
+}
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(
+    90deg,
+    #ce06d6,
+    #f440a3 39%,
+    #fdc7ca 67%,
+    #6183f3
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scrollActive {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  animation: bounceInDown 2s;
+  -webkit-animation: bounceInDown 2s;
+  -moz-animation: bounceInDown 2s;
+}
+
+.slide-in-left {
+  animation: slideInLeft 2s ease-in-out both;
+  transition: opacity 500ms;
+}
+
+.slide-in-right {
+  animation: slideInRight 2s ease-in-out both;
+  transition: opacity 500ms;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 2s ease-in-out both;
+  transition: opacity 500ms;
 }
