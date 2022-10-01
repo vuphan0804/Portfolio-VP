@@ -4,7 +4,7 @@ const HireMe = () => {
   return (
     <div className="">
       <div className="max-w-[1200px] mx-auto text-center px-10 my-32">
-        <h1 className="font-bold text-5xl m-4 px-60">
+        <h1 className="font-bold text-5xl m-4 mx-auto">
           Have projects in mind? Let’s work{" "}
           <span className="linear-text-secondary">together</span>
         </h1>

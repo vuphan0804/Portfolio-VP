@@ -29,15 +29,15 @@ const MyExperience = () => {
             data-aos="fade-up"
             className="grid grid-cois-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 mt-10 border-b border-gray-500 pb-10"
           >
-            <div>
+            <div className="mx-auto">
               <h1 className="font-semibold text-5xl">10+</h1>
               <p>Projects Done</p>
             </div>
-            <div>
+            <div className="mx-auto">
               <h1 className="font-semibold text-5xl">05</h1>
               <p>Years of Student</p>
             </div>
-            <div>
+            <div className="mx-auto">
               <h1 className="font-semibold text-5xl">5+</h1>
               <p>Total User</p>
             </div>
@@ -45,7 +45,7 @@ const MyExperience = () => {
         </div>
       </div>
       <div className="max-w-[1200px] mx-auto px-10 pb-32 grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 ">
-        <div data-aos="zoom-in" className="flex">
+        <div data-aos="zoom-in" className="flex mx-auto">
           <img
             className="image-personal -rotate-6"
             src="img/0e3f50634e13988609774601b1f04e70.jpg"
@@ -57,7 +57,7 @@ const MyExperience = () => {
             alt=""
           />
         </div>
-        <div data-aos="zoom-in" className="flex">
+        <div data-aos="zoom-in" className="flex mx-auto">
           <img
             className="image-personal -rotate-2 z-10"
             src="img/IMG_3729.JPG"

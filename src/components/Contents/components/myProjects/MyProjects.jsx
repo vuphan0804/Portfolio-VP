@@ -21,7 +21,7 @@ const MyProjects = () => {
           </div>
           <div
             data-aos="zoom-in-right"
-            className="w-[480px] h-[540px] bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl my-10"
+            className="w-[480px] h-[540px] mx-auto bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl my-10"
           >
             <img className="rounded-md" src="/img/VPChat.png" alt="" />
             <div className="py-2">
@@ -69,7 +69,7 @@ const MyProjects = () => {
           </div>
           <div
             data-aos="zoom-in-right"
-            className="w-[480px] h-[540px] bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl my-10"
+            className="w-[480px] h-[540px] mx-auto bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl my-10"
           >
             <img className="rounded-md" src="/img/Movie.png" alt="" />
             <div className="py-2">
@@ -114,7 +114,7 @@ const MyProjects = () => {
         <div className="">
           <div
             data-aos="zoom-in-left"
-            className="w-[480px] h-[540px] bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl mt-28"
+            className="w-[480px] h-[540px] mx-auto bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl mt-28"
           >
             <img className="rounded-md" src="/img/Masterwork.png" alt="" />
             <div className="py-2">
@@ -153,7 +153,7 @@ const MyProjects = () => {
           </div>
           <div
             data-aos="zoom-in-left"
-            className="w-[480px] h-[540px] bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl my-10"
+            className="w-[480px] h-[540px] mx-auto bg-white p-5 rounded-md hover:-translate-y-2 transition-primary cursor-pointer hover:shadow-xl my-10"
           >
             <img className="rounded-md" src="/img/ShopCart.png" alt="" />
             <div className="py-2">
